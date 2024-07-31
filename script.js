@@ -109,10 +109,50 @@ function waitAndResponce(inputText) {
                 sendTextMessage("Hello there 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Mani Sudheer</a></span>.<br><br>I'm a graduate with a Bachelor's degree in Computer Science and Engineering from <span class='bold'>Bapatla Engineering College 👨🏻‍💻📚</span>.<br><br>Send <span class='bold'>'help'</span> to know more about me.<br>");
             }, 2500);
             break;
-        case "help":
-            setTimeout(() => {
-            sendTextMessage("<span class='sk'><b>Send a keyword to get what you want to know about me</b>💬<br>e.g<br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'contact'</span> - to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br></span>");
-        }, 2000);
+            case "help":
+                setTimeout(() => {
+                    sendTextMessage(`
+                        <span class='sk'>
+                            <b>Send a keyword to get what you want to know about me</b> 💬
+                            <br><br>
+                            <table style="border-collapse: collapse; width: 100%; border: 1px solid #ddd;">
+                                <thead>
+                                    <tr>
+                                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Keyword</th>
+                                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px solid #ddd; padding: 8px;"><span class='bold'>skills</span></td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">To know my skills</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px solid #ddd; padding: 8px;"><span class='bold'>resume</span></td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">To get my resume</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px solid #ddd; padding: 8px;"><span class='bold'>education</span></td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">To get my education details</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px solid #ddd; padding: 8px;"><span class='bold'>contact</span></td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">To connect with me</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px solid #ddd; padding: 8px;"><span class='bold'>projects</span></td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">To get details of my projects</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px solid #ddd; padding: 8px;"><span class='bold'>clear</span></td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">To clear conversation</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                    `);
+                }, 2000);
+            
             break;
         case "resume":
             setTimeout(() => {
