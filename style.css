@@ -68,18 +68,11 @@
 
 .emoji {
     font-size: 22px;
-    
-   
-   
     cursor: pointer; 
-    margin-left: 5px;
-    margin-top: 13px; 
+    margin-top:18px;
+	margin-left:10px;
+	color:Black;
 }
-
-
-
-
-
 
 .scrollable {
     overflow-y: auto; 
